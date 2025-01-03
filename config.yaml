@@ -1,0 +1,33 @@
+# config.yaml
+openai_model: "gpt-4o"
+anthropic_model: "claude-3-5-haiku-20241022"
+xai_model: "grok-beta"
+supervisor_model: "gemini-2.0-flash-exp"
+
+openai_config:
+  temperature: 0.1
+  max_tokens: 300
+
+anthropic_config:
+  temperature: 0.2
+  max_tokens: 350
+
+xai_config:
+  temperature: 0.0
+  max_tokens: 280
+
+supervisor_config:
+  temperature: 0.0
+  max_tokens: 512
+
+expert_styles:
+  technical: "Focus on detailed technical explanations."
+  creative: "Use imaginative, broad storytelling approaches."
+  business: "Emphasize strategic and economic impacts."
+
+prompts:
+  consensus_task: "Analyze the following experts' responses. Provide a consensus analysis and highlight disagreements."
+  charts_task: "Generate useful charts or mindmap descriptions in concise text."
+  tools_task: "Perform sentiment analysis, bias detection, uncertainty highlighting, and jargon explanation. Separate each analysis by sections."
+  questions_task: "Provide related questions for deeper learning."
+  meta_task: "Evaluate quality metrics and perform pattern recognition."
